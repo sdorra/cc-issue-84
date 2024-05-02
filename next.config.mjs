@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withContentCollections } from "@content-collections/next";
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+};
+
+export default withContentCollections(nextConfig);
